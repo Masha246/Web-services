@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "369de066-f006-434b-8d26-b1d2a69014a0",
+		"name": "Web Service 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39477527"
+	},
+	"item": [
+		{
+			"name": "http://162.55.220.72:5031/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5031",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://162.55.220.72:5031/ all_jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5031/all_jobs",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031",
+					"path": [
+						"all_jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "162.55.220.72:5021/add_job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\"firm_title\": \"ABC\",\r\n\"position_title\": \"QA\",\r\n\"skills\": [\"JS\", \"Postman\", \"IOS\"],\r\n\"description\": \"Good job\",\r\n\"Job Posting\": \"16.12.2024\",\r\n\"Employee Status\": \"Part-time\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5031/add_job",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031",
+					"path": [
+						"add_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "49.13.144.122:5032/add_job_item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\"firm_title\": \"ABC\",\r\n\"position_title\": \"QA\",\r\n\"skills\": [\"JS\", \"Postman\", \"IOS\"],\r\n\"description\": \"Good job\",\r\n\"Job Posting\": \"16.12.2024\",\r\n\"Employee Status\": \"Part-time\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "49.13.144.122:5032/add_job_item",
+					"host": [
+						"49",
+						"13",
+						"144",
+						"122"
+					],
+					"port": "5032",
+					"path": [
+						"add_job_item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://49.13.144.122:5032/get_jobs_count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://49.13.144.122:5032/get_all_jobs",
+					"protocol": "http",
+					"host": [
+						"49",
+						"13",
+						"144",
+						"122"
+					],
+					"port": "5032",
+					"path": [
+						"get_all_jobs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
